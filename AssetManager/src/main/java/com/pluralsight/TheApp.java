@@ -63,7 +63,7 @@ public class TheApp {
             }
 
             System.out.println("╰──────── · · ୨୧ · · ────────╯");
-            System.out.println("˚₊ ˚ ‧₊ .:･˚₊ ˚ ‧₊ .:･˚₊ *˚˚₊ ˚");
+            System.out.println("˚₊ ˚ ‧₊ .:･˚₊ ˚ ‧₊ .:･˚₊ *˚˚₊ ˚˚ ‧₊");
         }
 
         System.out.println("\n-`♡´- End of Assets. Goodbye! -`♡´-");
