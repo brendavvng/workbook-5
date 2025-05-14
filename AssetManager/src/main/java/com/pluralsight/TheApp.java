@@ -16,9 +16,8 @@ public class TheApp {
         System.out.print("\n");
         System.out.println("*・゜゜・*:.。..。.:*・*:゜・*:.。. .。.:*・゜゜・**・゜゜・*:.");
         System.out.println("     Hello! Welcome to the Assets Managing App!");
-        System.out.println("*・゜゜・*:.。..。.:*・*:゜・*:.。. .。.:*・゜゜・**・゜゜・*:.");
-        System.out.println(("                     Assets below: "));
-        System.out.println("*・゜゜・*:.。..。.:*・*:゜・*:.。. .。.:*・゜゜・**・゜゜・*:.");
+        System.out.println("*・゜゜・*:.。..。.:*・*:゜・*:.。. .。.:*・゜゜・**・゜゜・*:.\n");
+        System.out.println(" ‧˚₊•┈┈┈┈List of Assets┈┈┈┈•‧₊˚⊹");
 
         // creating array list for assets
         ArrayList<Asset> assets = new ArrayList<>();
@@ -67,5 +66,6 @@ public class TheApp {
             System.out.println("˚₊ ˚ ‧₊ .:･˚₊ ˚ ‧₊ .:･˚₊ *˚˚₊ ˚");
         }
 
+        System.out.println("\n-`♡´- End of Assets. Goodbye! -`♡´-");
     }
 }
