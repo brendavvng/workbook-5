@@ -17,6 +17,8 @@ public class TheApp {
         System.out.println("*・゜゜・*:.。..。.:*・*:゜・*:.。. .。.:*・゜゜・**・゜゜・*:.");
         System.out.println("     Hello! Welcome to the Assets Managing App!");
         System.out.println("*・゜゜・*:.。..。.:*・*:゜・*:.。. .。.:*・゜゜・**・゜゜・*:.");
+        System.out.println(("                     Assets below: "));
+        System.out.println("*・゜゜・*:.。..。.:*・*:゜・*:.。. .。.:*・゜゜・**・゜゜・*:.");
 
         // creating array list for assets
         ArrayList<Asset> assets = new ArrayList<>();
@@ -45,16 +47,25 @@ public class TheApp {
 
         // for loop for asset collection
         for(Asset asset : assets) {
-            System.out.println("╭────── · · ୨୧ · · ──────╮");
+            System.out.println("╭──────── · · ୨୧ · · ────────╮");
             System.out.println("✿ Description: " + asset.getDescription());
             System.out.println("✿ Date acquired: " + asset.getDateAcquired());
             System.out.println("✿ Cost: $" + asset.getOriginalCost());
             System.out.printf("✿ Value: $%.2f\n", asset.getValue());
-            System.out.println("╰────── · · ୨୧ · · ──────╯");
+
+            // checking if it is a house or vehicle
+            if (asset instanceof House house){
+                // printing the address of house
+                System.out.println("✿ Address: " + house.getAddress());
+            } else if (asset instanceof Vehicle vehicle){
+                // printing the year and make and model
+                System.out.println("✿ Vehicle Year: " + vehicle.getYear()
+                        + "\n✿ Vehicle Make and Model: " + vehicle.getMakeModel());
+            }
+
+            System.out.println("╰──────── · · ୨୧ · · ────────╯");
             System.out.println("˚₊ ˚ ‧₊ .:･˚₊ ˚ ‧₊ .:･˚₊ *˚˚₊ ˚");
         }
-
-
 
     }
 }
