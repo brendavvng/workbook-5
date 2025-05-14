@@ -46,10 +46,10 @@ public class TheApp {
         // for loop for asset collection
         for(Asset asset : assets) {
             System.out.println("╭────── · · ୨୧ · · ──────╮");
-            System.out.println("Description: " + asset.getDescription());
-            System.out.println("Date acquired: " + asset.getDateAcquired());
-            System.out.println("Cost: $" + asset.getOriginalCost());
-            System.out.println("Value: $" + asset.getValue());
+            System.out.println("✿ Description: " + asset.getDescription());
+            System.out.println("✿ Date acquired: " + asset.getDateAcquired());
+            System.out.println("✿ Cost: $" + asset.getOriginalCost());
+            System.out.printf("✿ Value: $%.2f\n", asset.getValue());
             System.out.println("╰────── · · ୨୧ · · ──────╯");
             System.out.println("˚₊ ˚ ‧₊ .:･˚₊ ˚ ‧₊ .:･˚₊ *˚˚₊ ˚");
         }
