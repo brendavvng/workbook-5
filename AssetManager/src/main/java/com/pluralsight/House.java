@@ -2,7 +2,7 @@ package com.pluralsight;
 
 public class House extends Asset {
 
-
+    // creating constructor matching super / parent class
     public House(double originalCost, String dateAcquired, String description) {
         super(originalCost, dateAcquired, description);
     }
@@ -16,7 +16,8 @@ public class House extends Asset {
 
     // creating constructor, sets values for properties
     // taking in both Asset properties and House properties
-    public House(double originalCost, String dateAcquired, String description, String address, int lotSize, int condition, int squareFoot) {
+    public House(double originalCost, String dateAcquired, String description,
+                 String address, int lotSize, int condition, int squareFoot) {
         // "super" is calling the constructor in the Asset (parent) class
         super(originalCost, dateAcquired, description);
         this.address = address;
@@ -26,6 +27,7 @@ public class House extends Asset {
     }
 
     // creating getters and setters
+    // allows safe access & modification of private variables
     public String getAddress() {
         return address;
     }
@@ -58,7 +60,7 @@ public class House extends Asset {
         this.squareFoot = squareFoot;
     }
 
-    // creating override for getValue method
+    // creating override for getValue method - new version, specific to a House
     @Override
     public double getValue() {
         double valuePerSqFt;
