@@ -3,9 +3,9 @@ package com.pluralsight;
 public class Asset {
 
     // properties of asset
-    protected String description;
     protected String dateAcquired;
     protected double originalCost;
+    protected String description;
 
     // creating constructors, sets values for properties
     public Asset(double originalCost, String dateAcquired, String description) {
