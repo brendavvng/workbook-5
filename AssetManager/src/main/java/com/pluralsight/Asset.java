@@ -2,16 +2,19 @@ package com.pluralsight;
 
 public class Asset {
 
-    private String description;
-    private String dateAcquired;
-    private double originalCost;
+    // properties of asset
+    protected String description;
+    protected String dateAcquired;
+    protected double originalCost;
 
+    // creating constructors, sets values for properties
     public Asset(double originalCost, String dateAcquired, String description) {
         this.originalCost = originalCost;
         this.dateAcquired = dateAcquired;
         this.description = description;
     }
 
+    // creating getters and setters
     public String getDescription() {
         return description;
     }
@@ -39,7 +42,7 @@ public class Asset {
 
     // creating getValue getter
     public double getValue() {
-        return originalCost();
+        return originalCost;
 
     }
 }
