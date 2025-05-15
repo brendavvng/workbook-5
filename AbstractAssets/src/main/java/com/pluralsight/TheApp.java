@@ -16,7 +16,7 @@ public class TheApp {
         System.out.println("*・゜゜・*:.。..。.:*・*:゜・*:.。. .。.:*・゜゜・**・゜゜・*:.");
         System.out.println("     Hello! Welcome to the Assets Managing App!");
         System.out.println("*・゜゜・*:.。..。.:*・*:゜・*:.。. .。.:*・゜゜・**・゜゜・*:.\n");
-        System.out.println(" ‧˚₊•┈┈┈┈List of Assets┈┈┈┈•‧₊˚⊹");
+        System.out.println(" ‧˚₊•┈┈┈┈┈List of Assets┈┈┈┈┈•‧₊˚⊹");
 
         // creating array list for assets
         ArrayList<Asset> assets = new ArrayList<>();
@@ -36,10 +36,11 @@ public class TheApp {
         Vehicle vehicleTwo = new Vehicle(45000.00, "2024-01-04", "My Luxury Car",
                 "Lexus IS 350 F Sport", 5800, 2024);
 
+        // creating cash objects
         Cash cashMoneyOne = new Cash(1000.00, "2025-04-02", "Some Savings");
         Cash cashMoneyTwo = new Cash(4000.00, "2025-05-05", "Cash for Matcha");
 
-        // adding vehicles and home to assets list
+        // adding vehicles, home, and cash to assets list
         assets.add(houseOne);
         assets.add(houseTwo);
         assets.add(vehicleOne);
