@@ -12,11 +12,11 @@ public class Vehicle extends Asset {
 
     // creating properties of Vehicle
     // make & model of car
-    String makeModel;
+    protected String makeModel;
     // year of car
-    int year;
+    protected int year;
     // miles of car
-    int odometer;
+    protected int odometer;
 
     // creating vehicle constructors
     public Vehicle(double originalCost, String dateAcquired, String description,

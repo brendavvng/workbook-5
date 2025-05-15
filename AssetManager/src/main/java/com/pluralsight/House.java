@@ -8,11 +8,11 @@ public class House extends Asset {
     }
 
     // properties of house
-    String address;
+    protected String address;
     // condition of the house, 1 - excellent, 2 - good, 3 - fair, 4 - poor
-    int condition;
-    int squareFoot;
-    int lotSize;
+    protected int condition;
+    protected int squareFoot;
+    protected int lotSize;
 
     // creating constructor, sets values for properties
     // taking in both Asset properties and House properties
