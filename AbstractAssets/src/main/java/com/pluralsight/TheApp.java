@@ -53,7 +53,7 @@ public class TheApp {
             System.out.println("╭───────── · · ୨୧ · · ─────────╮");
             System.out.println("✿ Description:     " + asset.getDescription());
             System.out.println("✿ Date acquired:   " + asset.getDateAcquired());
-            System.out.printf("✿ Cost:            $%.2f     \n", asset.getOriginalCost());
+            System.out.printf("✿ Cost:            $%.2f\n", asset.getOriginalCost());
             System.out.printf("✿ Value:           $%.2f\n", asset.getValue());
 
             // checking if it is a house or vehicle
